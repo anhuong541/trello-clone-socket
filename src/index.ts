@@ -5,7 +5,7 @@ import http from "http";
 import { viewTasksProject, generateUidByString, checkUserIsAllowJoiningProject } from "./lib/auth";
 import config from "./config";
 
-const corsWebAllow = ["http://localhost:3000"];
+const corsWebAllow = ["http://localhost:3000", "https://trello-clone-backend-1uko.onrender.com"];
 const corsOptions = {
   origin: corsWebAllow,
   optionsSuccessStatus: 200,
