@@ -67,10 +67,6 @@ io.on("connection", (socket) => {
     io.to(projectId).emit("view_project", data);
   });
 
-  socket.on("realtime_update_project", (projectId, data) => {
-    io.to(projectId).emit("realtime_update_project_client", data);
-  });
-
   socket.on("user_disconnect", () => {
     socket.disconnect();
   });
