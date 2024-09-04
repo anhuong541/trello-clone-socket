@@ -71,4 +71,5 @@ exports.io.on("connection", (socket) => {
 httpServer.listen(wssport, () => {
     console.log(`listen to port 8080`);
 });
+module.exports = httpServer;
 //# sourceMappingURL=index.js.map
